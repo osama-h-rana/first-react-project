@@ -21,7 +21,7 @@ class App extends Component {
                 job: 'Bartender',
             }
         ]
-    }
+    };
 
     removeCharacter = (index) => {
         const { characters } = this.state;
@@ -30,17 +30,18 @@ class App extends Component {
             characters: characters.filter((character, i) => {
                 return i !== index;
             })
-        })
-    }
+        });
+    };
 
     render() {
-        const characters = this.state;
+        const { characters } = this.state;
+
         return (
             <div className="container">
                 <Table characterData={characters} removeCharacter={this.removeCharacter} />
             </div>
         );
-    }
+    };
 }
 
 export default App;

@@ -36,7 +36,7 @@ const Table = (props) => {
             <TableHeader />
             <TableBody characterData={characterData} removeCharacter={removeCharacter} />
         </table>
-    )
+    );
 }
 
 export default Table;
