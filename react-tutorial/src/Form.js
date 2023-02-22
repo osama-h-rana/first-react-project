@@ -42,7 +42,7 @@ class Form extends Component {
                     onChange={this.handleChange} />
                 <input 
                     type='button'
-                    value='Sumbit'
+                    value='Submit'
                     onClick={this.submitForm} />
             </form>
         );
